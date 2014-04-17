@@ -1,0 +1,16 @@
+Revision history for Perl module DateTimeX::Format::Excel.
+
++ New feature.
+- Removed/deprecated feature.
+! Bug fix.
+* Place holder
+
+
+NOTE: This software is designated as alpha quality until this notice is removed.
+
+v0.2.4    2014-04-17 15:25:11 America/Los_Angeles
+
++ Initial release of an alternate calculation to DateTime::Format::Excel
+
+
+
