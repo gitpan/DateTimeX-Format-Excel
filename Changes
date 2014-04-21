@@ -12,5 +12,7 @@ v0.2.4    2014-04-17 15:25:11 America/Los_Angeles
 
 + Initial release of an alternate calculation to DateTime::Format::Excel
 
+v0.4.2    2014-04-21 12:43:50-07:00 America/Los_Angeles
 
-
++ Turned on use strict and use warnings - for Kwalitee
++ Added the minimum supported perl version at 5.010
