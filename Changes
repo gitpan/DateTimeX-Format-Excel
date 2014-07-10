@@ -1,4 +1,4 @@
-Revision history for Perl module DateTimeX::Format::Excel.
+Revision history for DateTimeX-Format-Excel
 
 + New feature.
 - Removed/deprecated feature.
@@ -16,3 +16,8 @@ v0.4.2    2014-04-21 12:43:50-07:00 America/Los_Angeles
 
 + Turned on use strict and use warnings - for Kwalitee
 + Added the minimum supported perl version at 5.010
+
+v0.6.2    2014-07-10 09:17:54-07:00 America/Los_Angeles
+
++ Some POD updates
+! Fixed the resources links in the META files
