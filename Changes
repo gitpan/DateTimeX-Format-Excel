@@ -6,24 +6,28 @@ Revision history for DateTimeX-Format-Excel
 * Place holder
 
 
-NOTE: This software is designated as alpha quality until this notice is removed.
-
 v0.2.4    2014-04-17 15:25:11 America/Los_Angeles
 
-+ Initial release of an alternate calculation to DateTime::Format::Excel
+	+ Initial release of an alternate calculation to DateTime::Format::Excel
 
 v0.4.2    2014-04-21 12:43:50-07:00 America/Los_Angeles
 
-+ Turned on use strict and use warnings - for Kwalitee
-+ Added the minimum supported perl version at 5.010
+	+ Turned on use strict and use warnings - for Kwalitee
+	+ Added the minimum supported perl version at 5.010
 
 v0.6.2    2014-07-10 09:17:54-07:00 America/Los_Angeles
 
-+ Some POD updates
-! Fixed the resources links in the META files
+	+ Some POD updates
+	! Fixed the resources links in the META files
 
 v0.8.2    2014-07-10 18:57:27-07:00 America/Los_Angeles
 
-! Fixed the resources links in the META files better
-! Fixed a bug in the ExcelEpoch type where the empty string was not screened properly
-	This includes a test for the failure now
+	! Fixed the resources links in the META files better
+	! Fixed a bug in the ExcelEpoch type where the empty string was not screened properly
+		This includes a test for the failure now
+
+v0.10.2   2014-07-24 20:53:24-07:00 America/Los_Angeles
+
+	+ Removed the alpha notice so the software is beta state
+	! Required Type::Tiny 0.046 since there is an error in 0.045_3
+	! The error is actually in Type::Tiny::XS  versions 0.009 and earlier

@@ -1,6 +1,8 @@
 package DateTimeX::Format::Excel::Types;
-our	$AUTHORITY = 'cpan:JANDREW';
-use version; our $VERSION = version->declare("v0.8.2");
+BEGIN {
+  $DateTimeX::Format::Excel::Types::AUTHORITY = 'cpan:JANDREW';
+}
+use version; our $VERSION = qv("v0.10.2");
 use	5.010;
 use strict;
 use warnings;
@@ -17,6 +19,12 @@ use Type::Library
 use Types::Standard qw(
 		Str Dict Optional InstanceOf Int Num is_Num
 	);
+if( exists $INC{'Type/Tiny/XS.pm'} ){
+	eval "use Type::Tiny::XS 0.010";
+	if( $@ ){
+		die "You have loaded Type::Tiny::XS but versions prior to 0.010 will cause this module to fail";
+	}
+}
 use DateTime;
 if( $ENV{ Smart_Comments } ){
 	use Smart::Comments -ENV;
@@ -56,7 +64,6 @@ declare ExcelEpoch,
 		( !defined $_ ) 	? "No value passed" :
 		( !is_Num( $_ ) )	? "-$_- is not a Number" :
 							  "-$_- is less than 0"
-							  
 	};
 	
 declare SystemName,
@@ -91,6 +98,11 @@ outside of that.  It is built on L<Type::Tiny>.
 
 All type tests included with this package are considered to be the fixed definition of 
 the types.  Any definition not included in the testing is considered flexible.
+
+This module uses L<Type::Tiny> which can, in the background, use L<Type::Tiny::XS>.  
+While in general this is a good thing you will need to make sure that 
+Type::Tiny::XS is version 0.010 or newer since the older ones didn't support the 
+'Optional' method.
 
 =head2 Types
 
