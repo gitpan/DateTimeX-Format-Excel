@@ -2,7 +2,7 @@ package DateTimeX::Format::Excel;
 BEGIN {
   $DateTimeX::Format::Excel::AUTHORITY = 'cpan:JANDREW';
 }
-use	version; our $VERSION = qv("v0.10.2");
+use	version; our $VERSION = qv("v0.12.2");
 use	5.010;
 use	strict;
 use	warnings;
@@ -294,6 +294,11 @@ the time zone is stripped out.  No clone or duration calculations are provided
 with this module.  Finally this is a L<Moose> based module and does 
 not provide a functional interface. I<(Moose would allow it I just chose not 
 to for design purposes)>.
+
+The Types module for this package uses L<Type::Tiny> which can, in the background, 
+use L<Type::Tiny::XS>.  While in general this is a good thing you will need to make 
+sure that Type::Tiny::XS is version 0.010 or newer since the older ones didn't support 
+the 'Optional' method.
 
 =head2 Attributes
 
