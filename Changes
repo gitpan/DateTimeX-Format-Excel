@@ -39,3 +39,8 @@ v0.12.2   2014-07-26 00:42:31-07:00 America/Los_Angeles
 v0.12.4   2014-07-26 12:04:06-07:00 America/Los_Angeles
 
 	! Fixed missing test plans
+
+v0.12.6   2014-07-27 08:30:35-07:00 America/Los_Angeles
+
+	! Figured out how to turn off Type::Tiny::XS altogether in testing so that 
+		Failures are constrained to issues with this package only (I hope)

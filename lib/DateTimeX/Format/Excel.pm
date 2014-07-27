@@ -2,7 +2,7 @@ package DateTimeX::Format::Excel;
 BEGIN {
   $DateTimeX::Format::Excel::AUTHORITY = 'cpan:JANDREW';
 }
-use	version; our $VERSION = qv("v0.12.4");
+use	version; our $VERSION = qv("v0.12.6");
 use	5.010;
 use	strict;
 use	warnings;
@@ -17,7 +17,7 @@ if( $ENV{ Smart_Comments } ){
 	### Smart-Comments turned on for DateTimeX-Format-Excel ...
 }
 use	lib	'../../../lib',;
-use DateTimeX::Format::Excel::Types qw(
+use DateTimeX::Format::Excel::Types v0.12 qw(
 	DateTimeHash
 	DateTimeInstance
 	HashToDateTime
