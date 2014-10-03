@@ -44,3 +44,7 @@ v0.12.6   2014-07-27 08:30:35-07:00 America/Los_Angeles
 
 	! Figured out how to turn off Type::Tiny::XS altogether in testing so that 
 		Failures are constrained to issues with this package only (I hope)
+
+v0.12.8   2014-10-03 08:54:40-07:00 America/Los_Angeles
+
+	! Updated the minimum Moose requirements to avoid CPAN testers fails
