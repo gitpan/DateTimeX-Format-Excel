@@ -53,3 +53,7 @@ v0.12.10  2014-11-13 15:31:18-08:00 America/Los_Angeles
 
 	! Updated the minimum List::Util requirement to 1.33
 	+ Upgraded the dist.ini and as a consequence the Readme.pod
+
+v0.12.12  2014-11-19 11:08:18-08:00 America/Los_Angeles
+
+	+ Updated the minimum List::Util requirement for Test to 1.33
