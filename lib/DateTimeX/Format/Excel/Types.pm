@@ -2,7 +2,7 @@ package DateTimeX::Format::Excel::Types;
 BEGIN {
   $DateTimeX::Format::Excel::Types::AUTHORITY = 'cpan:JANDREW';
 }
-use version 0.9909; our $VERSION = version->declare("v0.12.14");
+use version; our $VERSION = version->declare("v0.12.16");
 use	5.010;
 use strict;
 use warnings;

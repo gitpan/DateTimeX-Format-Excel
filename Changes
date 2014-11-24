@@ -60,5 +60,10 @@ v0.12.12  2014-11-19 11:08:18-08:00 America/Los_Angeles
 
 v0.12.14  2014-11-24 11:10:36-08:00 America/Los_Angeles
 
-	+ pushed the 'version' module requirement to 0.9909 in test to 
+	! pushed the 'version' module requirement to 0.9909 in test to 
 		see if I can fix some test loading fails
+
+v0.12.16  2014-11-24 11:32:37-08:00 America/Los_Angeles
+
+	! Fixed the verision callout for the Types file in the Excel.pm file
+	! Removed the version module requirement
