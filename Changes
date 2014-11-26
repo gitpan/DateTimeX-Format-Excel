@@ -65,5 +65,9 @@ v0.12.14  2014-11-24 11:10:36-08:00 America/Los_Angeles
 
 v0.12.16  2014-11-24 11:32:37-08:00 America/Los_Angeles
 
-	! Fixed the verision callout for the Types file in the Excel.pm file
+	! Fixed the version callout for the Types file in the Excel.pm file
 	! Removed the version module requirement
+
+v0.12.18  2014-11-26 09:06:00-08:00 America/Los_Angeles
+
+	! explicitly added all the pre-requirements to the test stage to avoid failing a clean build
